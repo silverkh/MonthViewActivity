@@ -44,6 +44,7 @@ public class FirstActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -53,6 +54,7 @@ public class FirstActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ThirdActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
